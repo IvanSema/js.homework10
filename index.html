@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>homework</title>
+</head>
+<body>
+    <div class="mainer">
+        <div class="content-wrapper">
+            <div class="tab-block">
+                <div class="tab active" id='info'>
+                    <div class="icon info-icon"></div>
+                    <div class="description">INFORMATION</div>
+                </div>
+                <div class="tab" id='rating'>
+                    <div class="icon rating-icon"></div>
+                    <div class="description">RATINGS INFO</div>
+                </div>
+                <div class="tab" id='buy'>
+                    <div class="icon buy-icon"></div>
+                    <div class="description">WHERE TO BUY</div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="icon-cell">
+                        <div class="game-icon">
+                            <img src="images/game-logo.jpg" alt="game-logo">
+                        </div>
+
+
+                    </div>
+                    <div class="description-cell">
+                        <div class="game-name">
+                            <span class="name">FarCry 4</span>
+                            <span class="date">First Released Nov 17, 2014</span>
+                            <div class="rating-circle">
+                                <p>7.8</p>
+                            </div>
+                        </div>
+                        <div class="game-description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                            layas struggling under the regime of a despotic self-appointed king.</div>
+                            <div class="proposition">
+                                <div class="discound">
+                                    <span class="disc">20% OFF!</span>
+                                    <span class="price">$59.96</span>
+                                </div>
+                                <button class="btn">BUY IT NOW</button>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $("#info").click(function(){
+    changeTab();
+    $("#info").addClass('active');
+    $(".content").css({'backgroundColor' : '#212534'})
+}
+)
+
+$("#rating").click(function(){
+    changeTab();
+    $("#rating").addClass('active');
+    $(".content").css({'backgroundColor' : 'blue'})
+}
+)
+
+$("#buy").click(function(){
+    changeTab();
+    $("#buy").addClass('active');
+    $(".content").css({'backgroundColor' : 'green'})
+
+}
+)
+    </script>
+</body>
+</html>
